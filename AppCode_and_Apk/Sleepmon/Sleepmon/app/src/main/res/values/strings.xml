@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">眠眠萌</string>
+    <string name="time">00:00</string>
+    <string name="cancelAlarm">取消闹钟</string>
+    <string name="play">播放</string>
+    <string name="stop">停止</string>
+    <string name="quit">退出</string>
+    <string name="pause">暂停</string>
+    <string name="next_music">下一首</string>
+    <string name="last_music">上一首</string>
+    <string name="loaded">Loaded media file</string>
+    <string name="playing">Playing</string>
+    <string name="example">示例音乐 Traveling Light</string>
+    <string name="add_widget">Add widget</string>
+    <string name="appwidget_text">点击图片打开音乐播放器</string>
+</resources>

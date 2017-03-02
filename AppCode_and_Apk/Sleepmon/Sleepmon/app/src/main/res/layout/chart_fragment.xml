@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/sleeptips">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="0"
+            android:textSize="60sp"
+            android:gravity="center"
+            android:background="@drawable/circlecyan"
+            android:layout_alignParentRight="true"
+            android:elevation="7dp"
+            android:shadowDy="1.0"
+            android:id="@+id/grade"/>
+        <LinearLayout
+            android:id="@+id/upper"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/rect"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="您的近期睡眠综合评分："
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:id="@+id/recentGrade"/>
+
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="8dp"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="眠眠萌的建议："
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:id="@+id/suggest"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.apm.sleepmon.SimpleLineChart
+        android:id="@+id/simpleLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:elevation="5dp"
+        android:layout_below="@+id/grade"
+        android:background="@drawable/rect"/>
+
+</LinearLayout>

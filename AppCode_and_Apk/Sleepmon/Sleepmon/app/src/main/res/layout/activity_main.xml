@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layFrame"
+        android:layout_above="@+id/bottom">
+    </FrameLayout>
+
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom">
+    </com.ashokvarma.bottomnavigation.BottomNavigationBar>
+
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sound_bg"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="160.0dip">
+
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/play_music" />
+
+            <ImageButton
+                android:id="@+id/play_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:elevation="11dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50.0dip"
+                android:gravity="center"
+                android:src="@drawable/bofangzhuangtaitingzhi" />
+
+            <ImageButton
+                android:id="@+id/last_music"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/shangyiqu" />
+
+            <ImageButton
+                android:id="@+id/next_music"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/xiayiqu" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp">
+
+            <TextView
+                android:id="@+id/loaded"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="loaded"
+                android:textSize="20sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/source"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/loaded"
+                android:layout_toEndOf="@+id/loaded"
+                android:gravity="center" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/playing"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/loaded"
+                android:text="playing"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/playTime"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/playing"
+                android:text="00:00" />
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/playing"
+                android:layout_toEndOf="@+id/playTime"
+                android:layout_toStartOf="@+id/resTime" />
+
+            <TextView
+                android:id="@+id/resTime"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/playing" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/musicList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2">
+        </ListView>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+

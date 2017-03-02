@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/imageView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shadow"
+            android:layout_margin="25dp"
+            android:layout_centerInParent="true">
+            <LinearLayout
+                android:id="@+id/jishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/word1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="睡眠开始"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/hourt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp15" />
+
+
+                <TextView
+                    android:id="@+id/maohao1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp15" />
+
+
+                <TextView
+                    android:id="@+id/mint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp15" />
+
+
+                <TextView
+                    android:id="@+id/maohao2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp15" />
+
+
+                <TextView
+                    android:id="@+id/sec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp15" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp15" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我会在"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/timeBtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="00：00"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/shape2"
+                        android:textSize="26sp" />
+
+                    <Button
+                        android:id="@+id/cancelAlarmBtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:visibility="gone"
+                        android:text="取消闹钟" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="醒来"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/blue"
+                android:background="@drawable/shape"
+                android:id="@+id/start"
+                android:layout_gravity="center"
+                android:text="开始睡眠"
+                android:visibility="visible"
+                android:elevation="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="30dp" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/blue"
+                android:background="@drawable/shape"
+                android:text="睡眠结束"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:elevation="10dp"
+                android:layout_marginBottom="30dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/image1"
+        android:id="@+id/imageView" />
+
+</RelativeLayout>
